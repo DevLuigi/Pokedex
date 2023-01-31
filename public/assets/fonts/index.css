@@ -1,0 +1,8 @@
+* {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: pokemon;
+    src: url('./Pokemon\ Classic.ttf') format('truetype');
+}
