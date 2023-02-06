@@ -18,40 +18,12 @@ const Container = styled.div`
   
   cursor: default;
 
-  @keyframes animateBackground {
-    0% {
-      background: #fff;
-    }
-
-    50% {
-      background: #000;
-    }
-
-    100% {
-      background: #fff;
-    }
-  }
-
   .display-none {
     display: none;
   }
 
   .title {
     width: 30em;
-  }
-
-  @keyframes animate {
-    0% {
-      opacity: 0; 
-    }
-
-    50% {
-      opacity: 1; 
-    }
-
-    100% {
-      opacity: 0; 
-    }
   }
 
   .text {
@@ -82,11 +54,39 @@ const Container = styled.div`
     font-size: 1.3em;
     color: #fff;
     text-shadow: 3px 3px black;
+    text-align: center;
 
     position: absolute;
     bottom: 1em;
   }
 
+  @keyframes animateBackground {
+    0% {
+      background: #fff;
+    }
+
+    50% {
+      background: #000;
+    }
+
+    100% {
+      background: #fff;
+    }
+  }
+
+  @keyframes animate {
+    0% {
+      opacity: 0; 
+    }
+
+    50% {
+      opacity: 1; 
+    }
+
+    100% {
+      opacity: 0; 
+    }
+  }
 
   @media (max-width: 1200px) {
       .title {

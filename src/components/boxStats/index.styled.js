@@ -2,18 +2,18 @@ import styled from "styled-components";
 
 const Container = styled.div`
   background-color: #373737;
-  
-  padding: 1em;
-  margin: 1em 0em;
+ 
+  padding: 4%;
+  margin: 2% 0;
 
-  height: ${props => props.scroll === true ? '20%' : 'unset'};
+  height: ${props => props.scroll === true ? '23%' : 'unset'};
   overflow-y: ${props => props.scroll === true ? 'auto' : 'unset'};
 
   font-size: .5em;
   color: #fff;
   border-radius: 5px;
 
-  /* width */
+/* width */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -65,12 +65,13 @@ const Container = styled.div`
     .stats {
       width: 50%;
     }
+
+    .cities {
+      width: 90%;
+    }
   }
 
-  @media (max-width: 1280px) {
-    height: ${props => props.scroll === true ? '38%' : 'unset'};
-  }
-
+  
   @media (min-width: 1440px) {
     height: ${props => props.scroll === true ? '25%' : 'unset'};
   }

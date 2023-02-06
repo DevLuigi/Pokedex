@@ -26,6 +26,9 @@ export default function Lights(props) {
   // eslint-disable-next-line
   }, [props.animation]);
 
+
+
+  
   return(
     <Container>
         <div id="red"/>

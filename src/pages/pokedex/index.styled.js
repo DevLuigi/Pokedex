@@ -11,17 +11,17 @@ const Container = styled.div`
   background: url('/assets/images/background.png');
   background-size: cover;
 
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 
   .pokedex {
+    background: url('/assets/images/pokedex.png');
     display: flex;
     flex-direction: row;
     position: relative;
-    height: 85%;
-    width: 55%;
+    height: 600px;
+    width: 800px;
 
-    background: url('/assets/images/pokedex.png');
     background-size: contain;
     background-repeat: no-repeat;
 
@@ -36,33 +36,52 @@ const Container = styled.div`
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 15em;
-      }
+        height: 40%;
 
-      .screen-pokedex {
-        width: 14.3em;
-        height: 9.8em;
-        margin: 2.6em 2em .5em 0em;
+        .pokemon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height:100%;
+          width: 100%;
 
-        background: url(${props => props.screen});
-        background-repeat: no-repeat;
-        background-size: cover;
+          img {
+            width: 45%;
+          }
+        }
 
-        border-radius: .5em;
+        .screen-pokedex {
+          width: 60%;
+          height: 70%;
+          margin: 7% 9% 2% 0;
 
-        animation: ${props => `${props.animation} 2s ease-in-out` }
-      }
+          background: url(${props => props.screen});
+          background-repeat: no-repeat;
+          background-size: cover;
 
-      .title-pokemon {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        
-        width: 13em;
+          border: 2px solid;
+          border-radius: .7em;
 
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+          animation: ${props => `${props.animation} 2s ease-in-out` }
+        }
+
+        .title-pokemon {
+          display: flex;
+          flex-direction: row;
+
+          .name-pokemon {
+            color: #636363;
+            width: 10em;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+
+          span {
+            color: #c0c0c0;
+            margin-right: .3em;
+          }
+        }
       }
 
       .container-features {
@@ -70,18 +89,34 @@ const Container = styled.div`
         flex-direction: column;
         justify-content: space-around;;
 
-        height: 12em;
-        width: 17em;
-        margin-left: 2.2em;
+        height: 34%;
+        width: 73%;
+        margin-left: 10%;
 
-          input {
-            padding: .8em;
-            color: #3a444d;
-            background-color: #D9D9D9;
-            outline: none;
-            border: 2px solid #333;
-            border-radius: 5px;
-            box-shadow: -2px 3px 0 #888, -3px 5px 0 #222;
+          .search {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+
+            input {
+              width: 100%;
+              padding: .6em .8em;
+              color: #3a444d;
+              background-color: #D9D9D9;
+              outline: none;
+              border: 2px solid #333;
+              border-radius: 5px;
+              box-shadow: -2px 3px 0 #888, -3px 5px 0 #222;
+              margin-right: 0.5em;
+            }
+
+            button {
+              width: 25%;
+            }
+
+            button > img {
+              width: 40%;
+            }
           }
 
           .container-button {
@@ -90,13 +125,8 @@ const Container = styled.div`
             align-items: center;
 
             width: 100%;
-            height: 8em;
+            height: 40%;
           }
-        }
-
-        img {
-          width: 100%;
-          height: 100%;
         }
     }
 
@@ -112,7 +142,7 @@ const Container = styled.div`
         justify-content: flex-end;
         width: 70%;
         
-        margin: 1.5em 0em 0em 3em;
+        margin: 6% 0 0 12%;
       }
 
       .container-stats {
@@ -120,7 +150,7 @@ const Container = styled.div`
         width: 75%;
 
         padding: .5em;
-        margin: 3.2em 0em 0em 2em;
+        margin: 14% 0 0 8%;
 
         background-color: #E3E3E3;
         border-radius: 5px;
@@ -178,117 +208,65 @@ const Container = styled.div`
     }
   }
 
-  @media (max-width: 1280px) {
+  @media (width <= 1280px) {
     .pokedex {
-      height: 78%;
-      width: 75%;
-
       .pokedex-left {
-
         .container-viewer {
-          height: 20em;
-
           .screen-pokedex {
-            width: 18.5em;
-            height: 13em;
-            margin: 2em 2.7em .5em 0em;
+            margin: 8% 9% 2% 0;
           }
-
-          .title-pokemon {
-            width: 16em;
-          }
-        }
-
-        .container-features {
-          height: 14em;
-          width: 22em;
-          margin-left: 2.8em;
-        }
-
-      }
-
-      .pokedex-right {
-
-        .button-power {
-          margin: 2em 0em 0em 3em;
-        }
-
-        .container-stats {
-          margin: 5em 0em 0em 2.5em;
-        }
-        
-      }
-    }
-  }
-
-  @media (min-width: 1440px) {
-    .pokedex {
-      height: 75%;
-
-      .pokedex-left {
-
-        .container-viewer {
-
-          .screen-pokedex {
-            width: 15.5em;
-            height: 10.5em;
-            margin: 2em 2em 0.5em 0em;
-          }
-        }
-
-        .container-features {
-          width: 18.5em;
-        }
-      }
-
-      .pokedex-right {
-
-        .container-stats {
-          margin: 3.5em 0em 0em 2em;
         }
       }
     }
   }
 
-  @media (min-width: 1920px) {
+
+  @media (width >= 1440px) {
     .pokedex {
-
       .pokedex-left {
-
         .container-viewer {
-          height: 20em;
+          height: 43%;
 
           .screen-pokedex {
-            width: 19em;
-            height: 13em;
-            margin: 0.5em 5em 0.5em 0em;
+            height: 66%;
+            margin: 13% 9% 2% 0;
           }
-
-          .title-pokemon {
-            width: 14em;
-          }
-        }
-
-        .container-features {
-          width: 22.5em;
-          margin-left: 2.8em;
-        }
-      }
-
-      .pokedex-right {
-        .button-power {
-          width: 65%;
-          margin: 2.5em 4em 0em 0em;
-        }
-
-        .container-stats {
-          margin: 4.5em 4.5em 0em 0em;
-          width: 70%;
         }
       }
     }
   }
 
+  @media (width >= 1920px ) {
+    .pokedex {
+      height: 850px;
+      width: 1120px;
+
+      .pokedex-left {
+
+         .container-viewer {
+            height: 45%;
+
+            .screen-pokedex {
+              width: 60%;
+              height: 62%;
+              margin: 10% 9% 2% 0;
+            }
+
+            .title-pokemon {
+              font-size: 1.3em;
+            }
+         }
+         
+      }
+
+      .pokedex-right {
+
+        .container-stats {
+          margin: 17% 0 0 8%;
+        }
+
+      }
+    }
+  }
 `
-
-export { Container }
+export { Container } 

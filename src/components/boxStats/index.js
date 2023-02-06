@@ -5,7 +5,7 @@ import Container from "./index.styled";
 
 
 
-export default function BoxStats(props) {
+export default function BoxStats(props) {  
   return(
     <Container {...props}>
         <div className="titulo">  

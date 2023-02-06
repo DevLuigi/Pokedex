@@ -5,11 +5,11 @@ import { Container } from "./index.styled";
 
 
 
+
 export default function IntroPokedex() {
   const navigate = useNavigate();
   const ano = new Date().getFullYear();
 
-  const [audioIntro] = useState(new Audio('/assets/audio/enter.mpeg'));
   const [text, setText] = useState('');
   const [className, setClassName] = useState();
   const [animation, setAnimation] = useState(false);
@@ -20,7 +20,6 @@ export default function IntroPokedex() {
     if(event.key === 'Enter'){
       setClassName('display-none');
       setAnimation(true);
-      audioIntro.play();
 
       setTimeout(() => {
         navigate('/pokedex');
@@ -34,7 +33,6 @@ export default function IntroPokedex() {
 
   function navig() {
     setClassName('display-none');
-    audioIntro.play();
     setAnimation(true);
 
 
@@ -44,6 +42,7 @@ export default function IntroPokedex() {
   }
 
 
+  
   useEffect(() => {
     
     if(window.innerWidth <= 1200) 
@@ -61,7 +60,7 @@ export default function IntroPokedex() {
         <img className={className ?? "title"} src="assets/images/title.png" alt="img-title-pokémon"/>
         <div className={className ?? "text"} onClick={() => navig()}> {text} </div>
         <div className={className ?? "footer"}> {ano} - Dev Brothers - Beta Version  </div>
-        <div className={className ?? "snorlax"}> <img src="/assets/pokemons/snorlax.gif" alt="gif-snorlax"/> </div>
+        <div className={className ?? "snorlax"}> <img src="/assets/images/snorlax.gif" alt="gif-snorlax"/> </div>
     </Container>
   );
 }

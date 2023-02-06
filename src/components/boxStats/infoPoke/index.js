@@ -4,8 +4,12 @@ import Container from "./index.styled";
 
 
 
+
 export default function InfoPoke(props) {
   const validation = props.pokedexOn === true && props.value ? props.value : '***'
+
+
+
 
   return(
     <Container>

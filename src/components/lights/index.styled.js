@@ -6,14 +6,13 @@ const Container = styled.div`
   justify-content: space-around;
   align-items: center;
   
-  height: 2em;
-  width: 8em;
-  margin: 1em 2em;
-  
-  
+  height: 5%;
+  width: 35%;
+  margin: 7%;
+
   div {
-    height: 2em;
-    width: 2em;
+    height: 100%;
+    width: 25%;
     background-color: unset;
     border-radius: 50%;
     box-shadow: -2px 1px 0 #000;
@@ -33,30 +32,20 @@ const Container = styled.div`
   }
 
   @media (max-width: 1280px) {
-    height: 5em;
-    width: 11em;
-    margin: 0em 2em;
-
-    div {
-      height: 2.5em;
-      width: 2.5em;
-    }
+    height: 2em;
+    width: 9em;
+    margin: 1.5em 2em;
   }
 
   @media (min-width: 1440px) {
-    height: 4em;
-    margin: 0em 2em;
+    height: 2em;
+    margin: 1em 2em;
   }
 
   @media (min-width: 1920px) {
     width: 10em;
-    height: 4em;
-    margin: 0em 2.5em;
-    
-    div {
-      height: 2.5em;
-      width: 2.5em;
-    }
+    height: 2.5em;
+    margin: 1.6em 2.5em;
   }
 `
 
