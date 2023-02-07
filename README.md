@@ -1,6 +1,6 @@
 
 <div align="center">
-    <h1> SEJAM BEM VINDOS A POKEDEX </h1>
+    <h1> SEJAM BEM VINDOS A POKÉDEX </h1>
 </div>
 
 
