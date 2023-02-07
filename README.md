@@ -1,70 +1,91 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+    <h1> SEJAM BEM VINDOS A POKEDEX </h1>
+</div>
 
-## Available Scripts
 
-In the project directory, you can run:
+<div align="center">
+   <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge" alt="badge-desenvolvimento"/>
+</div>
 
-### `npm start`
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Tópicos 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Descrição do projeto](#descrição-do-projeto)
 
-### `npm test`
+- [Funcionalidades](#funcionalidades)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Aplicação](#aplicação)
 
-### `npm run build`
+- [Ferramentas utilizadas](#ferramentas-utilizadas)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [Acesso ao projeto](#acesso-ao-projeto)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [Abrir e rodar o projeto](#abrir-e-rodar-o-projeto)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [Desenvolvedores](#desenvolvedores)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<br>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Descrição do projeto 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<p align="justify">
+ Projeto em desenvolvimento para colocar em prática as tecnologias que estamos estudando.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+ <br>
 
-## Learn More
+## Funcionalidades
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+:heavy_check_mark: `Funcionalidade 1:` Realizar busca de informações dos pokémons, podendo ser por ID ou nome.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+:heavy_check_mark: `Funcionalidade 2:` Botões "prev" e "next" que auxiliam na busca pelos pokémons.
 
-### Code Splitting
+:heavy_check_mark: `Funcionalidade 3:` Ligar e Desligar a Pokédex.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<br>
 
-### Analyzing the Bundle Size
+## Aplicação
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<div align="center">
 
-### Making a Progressive Web App
+<img src="public/assets/images/pokedex-video.gif"/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+</div>
 
-### Advanced Configuration
+###
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<br>
 
-### Deployment
+## Ferramentas utilizadas
+![React.js](https://img.shields.io/badge/-React.js-0D1117?style=for-the-badge&logo=react&labelColor=0D1117)&nbsp;
+![JavaScript](https://img.shields.io/badge/-JavaScript-0D1117?style=for-the-badge&logo=javascript&labelColor=0D1117&textColor=0D1117)&nbsp;
+![StyledComponents](https://img.shields.io/badge/-StyledComponents-0D1117?style=for-the-badge&logo=styledComponents&labelColor=0D1117&textColor=0D1117)&nbsp;
+![Axios](https://img.shields.io/badge/-Axios-0D1117?style=for-the-badge&logo=axios&labelColor=0D1117&textColor=0D1117)&nbsp;
+###
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<br>
 
-### `npm run build` fails to minify
+## Acesso ao projeto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Você pode [acessar o código fonte do projeto](https://github.com/DevLuigi/Pokedex) ou [acessa-lo](link).
+
+<br>
+
+## Abrir e rodar o projeto
+
+Após baixar o projeto, você pode abrir com o `Visual Studio Code`. 
+
+- Abra a pasta onde o projeto está localizado, através dos botões `File >> Open Folder`;
+- Após abrir a pasta, abra o seu terminal e rode o comando `npm start`.
+
+Depois de realizar esse passo a passo, o `Visual Studio Code` irá abrir o projeto no seu Browser para você. 🏆 
+
+<br>
+
+## Desenvolvedores
+
+| [<img src="https://avatars.githubusercontent.com/u/89977964?s=400&u=a0d21d2cf86edf9e2f66bcef496882e445f38f6d&v=4" width=115><br><sub>Luigi da Silva Coelho</sub>](https://github.com/DevLuigi) |  [<img src="https://avatars.githubusercontent.com/u/89988223?v=4" width=115><br><sub>Kaio da Silva Coelho</sub>](https://github.com/Kaio-Silva)  |
+| :---: | :---: 
+
