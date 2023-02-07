@@ -69,7 +69,7 @@
 
 ## Acesso ao projeto
 
-Você pode [acessar o código fonte do projeto](https://github.com/DevLuigi/Pokedex) ou [acessa-lo](https://euphonious-kringle-8cd526.netlify.app/pokedex).
+Você pode [acessar o código fonte do projeto](https://github.com/DevLuigi/Pokedex) ou [acessa-lo](https://euphonious-kringle-8cd526.netlify.app/).
 
 <br>
 
