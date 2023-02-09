@@ -78,9 +78,10 @@ Você pode [acessar o código fonte do projeto](https://github.com/DevLuigi/Poke
 Após baixar o projeto, você pode abrir com o `Visual Studio Code`. 
 
 - Abra a pasta onde o projeto está localizado, através dos botões `File >> Open Folder`;
-- Após abrir a pasta, abra o seu terminal e rode o comando `npm start`.
+- Após abrir a pasta, abra o seu terminal e rode o comando `npm install` para instalar todas as dependências do projeto.
+- Depois de realizar esses dois passos, basta rodar um `npm start`
 
-Depois de realizar esse passo a passo, o `Visual Studio Code` irá abrir o projeto no seu Browser para você. 🏆 
+Então o `Visual Studio Code` irá abrir o projeto no seu Browser para você. 🏆 
 
 <br>
 
